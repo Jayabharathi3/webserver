@@ -27,6 +27,7 @@ Serving the HTML pages.
 Testing the webserver
 
 ## PROGRAM:
+```python
 DEVELOPED BY : JAYABHARATHI . S
 REGISTER NO : 212222100013
 
@@ -59,6 +60,7 @@ server_address = ('',80)
 httpd = HTTPServer(server_address,myhandler)
 print("my webserver is running...")
 httpd.serve_forever()
+```
 
 ## OUTPUT:
 ![image](https://user-images.githubusercontent.com/120367796/227995572-ec38299b-16ec-4aba-aec7-ab2b5f8555d1.png)

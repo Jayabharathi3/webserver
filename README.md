@@ -32,34 +32,39 @@ DEVELOPED BY : JAYABHARATHI . S
 REGISTER NO : 212222100013
 
 from http.server import HTTPServer, BaseHTTPRequestHandler
+
 content = """
 <!DOCTYPE html>
 <html>
 <head>
-<title>My webserver</title>
+<titlt>MY WEBSERVER</title>
 </head>
 <body>
-<h1><u>Top five web application development frameworks.</u><h1>
-<ul>
-<li>Django</li>
-<li>Angular or Angular JS</li>
-<li>Laravel.</li>
-<li>Meteor. </li>
-<li>ASP.NET. </li>
+<h1>top five web application development frameworks.
+</h1>
+<li>DJANGO</li>
+<li>MEAN</li>
+<li>MERN</li>
+<li>SPRING BOARD</li>
+<li>ASP.NET</li>
 </body>
 </html>
 """
-class myhandler(BaseHTTPRequestHandler):
+
+class HelloHandler(BaseHTTPRequestHandler):
     def do_GET(self):
-        print("request received")
+        print("request recieved")
         self.send_response(200)
-        self.send_header('content-type', 'text/html; charset=utf-8')
+        self.send_header('Content-type', 'text/html; charset=utf-8')
         self.end_headers()
         self.wfile.write(content.encode())
-server_address = ('',80)
-httpd = HTTPServer(server_address,myhandler)
-print("my webserver is running...")
+
+
+server_address = ('', 80)
+httpd = HTTPServer(server_address, HelloHandler)
+print("my webserver is running.....")
 httpd.serve_forever()
+
 ```
 
 ## OUTPUT:

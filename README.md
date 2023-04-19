@@ -69,11 +69,11 @@ httpd.serve_forever()
 
 ## OUTPUT:
 
-## CLIENT OUTPUT
-![image](https://user-images.githubusercontent.com/120367796/227995572-ec38299b-16ec-4aba-aec7-ab2b5f8555d1.png)
-
 ## SERVER OUTPUT
 ![image](https://user-images.githubusercontent.com/120367796/233161914-ee529076-3536-4c06-9d45-3457421aa8e2.png)
+
+## CLIENT OUTPUT
+![image](https://user-images.githubusercontent.com/120367796/227995572-ec38299b-16ec-4aba-aec7-ab2b5f8555d1.png)
 
 
 
